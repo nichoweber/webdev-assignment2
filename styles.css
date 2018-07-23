@@ -1,0 +1,69 @@
+/*On the body tag, I am removing default margins and setting up flexbox, so I can
+push the footer to the bottom of the page.*/
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .85em;
+}
+
+
+/*Styles for the nav and the footer*/
+nav, footer {
+    background: hsl(180, 24%, 67%);
+    padding: 15px;
+}
+
+/*Making the links on the nav white and adding space between the links*/
+nav a {
+    color: white;
+    margin-right: 15px;
+}
+
+nav a:first-of-type {
+    font-size: 2em;
+}
+
+/*Styles the main section of the document, while pushing the footer to the bottom*/
+main {
+    flex: 1;
+    padding: 0 7.5vw;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Gives the page content a black margin*/
+main div {
+    background: white;
+    padding: 25px;
+    flex: 1;
+}
+
+/*Styles the logo and adds a border to the bottom*/
+main img {
+    width: 250px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+/*Each article will be a self-contained box of the theme color, #96bebe, with
+white text*/
+article {
+    background: #96bebe;
+    color: white;
+    padding: 15px;
+    margin: 25px 0;
+    width: 50%;
+    border-radius: 25px;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12)
+}
+
+/*Centers the footer text and makes it white*/
+footer {
+    text-align: center;
+    color: white;
+}
